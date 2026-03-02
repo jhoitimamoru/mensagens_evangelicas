@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade — Mensagens Evangélicas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 860px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #222;
+      line-height: 1.7;
+    }
+    h1 { font-size: 1.8em; color: #1a1a2e; }
+    h2 { font-size: 1.2em; color: #1a1a2e; margin-top: 2em; border-bottom: 1px solid #ddd; padding-bottom: 4px; }
+    h3 { font-size: 1em; color: #333; margin-top: 1.4em; }
+    table { width: 100%; border-collapse: collapse; margin: 1em 0; }
+    th, td { border: 1px solid #ccc; padding: 8px 12px; text-align: left; }
+    th { background-color: #f4f4f4; }
+    a { color: #1a73e8; }
+    .subtitle { color: #555; font-size: 0.95em; }
+    hr { border: none; border-top: 1px solid #e0e0e0; margin: 2em 0; }
+    footer { font-size: 0.85em; color: #888; margin-top: 3em; }
+  </style>
+</head>
+<body>
+
+  <h1>Política de Privacidade — Mensagens Evangélicas</h1>
+  <p class="subtitle"><strong>Última atualização:</strong> 01 de março de 2026</p>
+
+  <hr />
+
+  <h2>1. Introdução</h2>
+  <p>
+    O aplicativo <strong>Mensagens Evangélicas</strong> ("aplicativo", "nós") é um serviço gratuito que oferece
+    mensagens e conteúdo evangélico, pedidos de oração comunitários e assistente de chat com inteligência
+    artificial. Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos suas
+    informações pessoais ao utilizar o aplicativo.
+  </p>
+  <p>
+    Ao utilizar nosso aplicativo, você concorda com as práticas descritas neste documento. Se não concordar
+    com qualquer parte desta política, pedimos que não utilize o aplicativo.
+  </p>
+
+  <h2>2. Dados Coletados</h2>
+
+  <h3>2.1 Dados de Conta (fornecidos pelo usuário)</h3>
+  <p>Ao realizar login com o <strong>Google</strong>, coletamos automaticamente:</p>
+  <ul>
+    <li>Nome de exibição</li>
+    <li>Endereço de e-mail</li>
+    <li>URL da foto de perfil (fornecida pela conta Google)</li>
+    <li>Identificador único do usuário (UID do Firebase Authentication)</li>
+  </ul>
+  <p>Esses dados são sincronizados com nossa base de dados (Cloud Firestore) na conta do usuário.</p>
+
+  <h3>2.2 Conteúdo Criado pelo Usuário</h3>
+  <ul>
+    <li>
+      <strong>Pedidos de oração:</strong> título, descrição e comentários publicados na seção de orações
+      comunitárias. O usuário pode optar por publicar anonimamente, caso em que nenhum nome ou foto é
+      armazenado publicamente.
+    </li>
+    <li>
+      <strong>Interações:</strong> contagem de curtidas/orações realizadas, favoritos e compartilhamentos
+      (contadores numéricos associados à conta).
+    </li>
+    <li>
+      <strong>Chat com IA:</strong> mensagens enviadas ao assistente de inteligência artificial durante a
+      sessão. <strong>As conversas do chat não são persistidas</strong> em nossos servidores — elas existem
+      apenas durante a sessão ativa no dispositivo.
+    </li>
+  </ul>
+
+  <h3>2.3 Dados Técnicos</h3>
+  <p>
+    Não coletamos diretamente dados de dispositivo, localização, câmera, microfone ou qualquer outro sensor.
+    O acesso à internet é necessário para o funcionamento do aplicativo.
+  </p>
+
+  <h2>3. Como Usamos Seus Dados</h2>
+  <table>
+    <thead>
+      <tr><th>Finalidade</th><th>Base Legal</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Autenticar sua identidade e manter sua sessão ativa</td><td>Execução do contrato (uso do serviço)</td></tr>
+      <tr><td>Exibir seu nome e foto nos pedidos de oração que você publicar</td><td>Consentimento (ato de publicar)</td></tr>
+      <tr><td>Personalizar sua experiência (perfil, contadores de atividade)</td><td>Interesse legítimo</td></tr>
+      <tr><td>Enviar suas mensagens ao serviço de IA (OpenRouter.ai) para gerar respostas</td><td>Execução do serviço solicitado</td></tr>
+      <tr><td>Melhorar o aplicativo e corrigir problemas técnicos</td><td>Interesse legítimo</td></tr>
+    </tbody>
+  </table>
+  <p>Não utilizamos seus dados para fins de publicidade ou marketing de terceiros.</p>
+
+  <h2>4. Compartilhamento de Dados com Terceiros</h2>
+  <p>Para operar o aplicativo, compartilhamos dados com os seguintes provedores de serviço:</p>
+
+  <h3>4.1 Google Firebase (Google LLC)</h3>
+  <ul>
+    <li><strong>Firebase Authentication:</strong> gerencia o login e a sessão do usuário.</li>
+    <li><strong>Cloud Firestore:</strong> banco de dados onde são armazenados perfis de usuário, pedidos de oração e comentários.</li>
+  </ul>
+  <p>Política de privacidade: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+
+  <h3>4.2 Google Sign-In (Google LLC)</h3>
+  <p>
+    Utilizado para autenticação via conta Google. As permissões solicitadas são: <code>profile</code>
+    (nome e foto) e <code>email</code>.
+  </p>
+  <p>Política de privacidade: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+
+  <h3>4.3 OpenRouter.ai</h3>
+  <p>
+    As mensagens enviadas ao chat de IA são transmitidas à API da OpenRouter, que as encaminha a modelos de
+    linguagem de terceiros (como GPT, Claude, Gemini) para gerar respostas.
+    <strong>Não enviamos dados de identificação pessoal (nome, e-mail, foto) a este serviço</strong> —
+    apenas o conteúdo das mensagens da conversa.
+  </p>
+  <p>Política de privacidade: <a href="https://openrouter.ai/privacy" target="_blank">https://openrouter.ai/privacy</a></p>
+
+  <h3>4.4 Google Fonts (Google LLC)</h3>
+  <p>Utilizado apenas para carregamento de fontes tipográficas. Nenhum dado pessoal é transmitido.</p>
+
+  <p>Não vendemos, alugamos ou cedemos seus dados pessoais a terceiros para fins comerciais.</p>
+
+  <h2>5. Armazenamento e Segurança dos Dados</h2>
+  <ul>
+    <li>Os dados são armazenados nos servidores do <strong>Google Firebase</strong>, com infraestrutura segura gerenciada pelo Google.</li>
+    <li>O acesso ao banco de dados é controlado por regras de segurança do Firestore, garantindo que cada usuário acesse apenas seus próprios dados privados.</li>
+    <li>Utilizamos conexões criptografadas (HTTPS/TLS) para todas as comunicações de rede.</li>
+    <li>Embora adotemos medidas razoáveis de segurança, nenhum sistema é completamente inviolável. Não podemos garantir segurança absoluta.</li>
+  </ul>
+
+  <h2>6. Retenção de Dados</h2>
+  <ul>
+    <li>Seus dados de conta e conteúdo são mantidos enquanto sua conta estiver ativa.</li>
+    <li>Caso solicite a exclusão da conta, removeremos seus dados pessoais do nosso banco de dados em até <strong>30 dias</strong>, exceto onde a retenção seja exigida por lei.</li>
+    <li>Pedidos de oração publicados anonimamente permanecem no sistema sem vínculo identificável com sua conta.</li>
+  </ul>
+
+  <h2>7. Seus Direitos</h2>
+  <p>
+    De acordo com a <strong>Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018)</strong>,
+    você tem direito a:
+  </p>
+  <ul>
+    <li><strong>Acessar</strong> os dados que temos sobre você.</li>
+    <li><strong>Corrigir</strong> dados incompletos, inexatos ou desatualizados (disponível na tela de perfil do aplicativo).</li>
+    <li><strong>Excluir</strong> seus dados pessoais e sua conta.</li>
+    <li><strong>Revogar</strong> o consentimento para uso dos dados.</li>
+    <li><strong>Portabilidade</strong> dos seus dados, mediante solicitação.</li>
+    <li><strong>Informação</strong> sobre com quem compartilhamos seus dados.</li>
+  </ul>
+  <p>Para exercer qualquer um desses direitos, entre em contato pelo e-mail indicado na Seção 10.</p>
+
+  <h2>8. Dados de Menores de Idade</h2>
+  <p>
+    Este aplicativo <strong>não é destinado a crianças menores de 13 anos</strong>. Não coletamos
+    intencionalmente dados de menores. Se você acreditar que uma criança forneceu informações pessoais ao
+    aplicativo sem consentimento dos responsáveis, entre em contato conosco para que possamos removê-las.
+  </p>
+
+  <h2>9. Alterações a Esta Política</h2>
+  <p>
+    Podemos atualizar esta Política de Privacidade periodicamente. Quando houver alterações significativas,
+    notificaremos por meio de aviso no aplicativo ou atualizando a data de "Última atualização" no topo
+    deste documento. Recomendamos que você revise esta política regularmente.
+  </p>
+
+  <h2>10. Contato</h2>
+  <p>
+    Se tiver dúvidas, solicitações ou preocupações sobre esta Política de Privacidade ou o tratamento dos
+    seus dados, entre em contato:
+  </p>
+  <p>
+    <strong>E-mail:</strong> <a href="mailto:suporte.jmk@gmail.com">suporte.jmk@gmail.com</a><br />
+    <strong>Desenvolvedor:</strong> JMK Soluções<br />
+    <strong>País:</strong> Brasil
+  </p>
+
+  <hr />
+
+  <footer>
+    Esta política de privacidade foi elaborada em conformidade com a Lei Geral de Proteção de Dados
+    (LGPD — Lei nº 13.709/2018) e com as políticas do Google Play.
+  </footer>
+
+</body>
+</html>
