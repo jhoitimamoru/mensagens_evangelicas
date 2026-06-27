@@ -28,15 +28,14 @@
 <body>
 
   <h1>Política de Privacidade — Mensagens Evangélicas</h1>
-  <p class="subtitle"><strong>Última atualização:</strong> 01 de março de 2026</p>
+  <p class="subtitle"><strong>Última atualização:</strong> 27 de junho de 2026</p>
 
   <hr />
 
   <h2>1. Introdução</h2>
   <p>
     O aplicativo <strong>Mensagens Evangélicas</strong> ("aplicativo", "nós") é um serviço gratuito que oferece
-    mensagens e conteúdo evangélico, pedidos de oração comunitários e assistente de chat com inteligência
-    artificial. Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos suas
+    mensagens e conteúdo evangélico e pedidos de oração comunitários. Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos suas
     informações pessoais ao utilizar o aplicativo.
   </p>
   <p>
@@ -47,11 +46,11 @@
   <h2>2. Dados Coletados</h2>
 
   <h3>2.1 Dados de Conta (fornecidos pelo usuário)</h3>
-  <p>Ao realizar login com o <strong>Google</strong>, coletamos automaticamente:</p>
+  <p>Ao realizar login com o <strong>Google</strong> ou com a <strong>Apple</strong>, coletamos automaticamente:</p>
   <ul>
     <li>Nome de exibição</li>
-    <li>Endereço de e-mail</li>
-    <li>URL da foto de perfil (fornecida pela conta Google)</li>
+    <li>Endereço de e-mail (quando fornecido — no login com Apple o usuário pode optar por ocultar o e-mail real)</li>
+    <li>URL da foto de perfil (quando disponibilizada pelo provedor de login)</li>
     <li>Identificador único do usuário (UID do Firebase Authentication)</li>
   </ul>
   <p>Esses dados são sincronizados com nossa base de dados (Cloud Firestore) na conta do usuário.</p>
@@ -67,17 +66,14 @@
       <strong>Interações:</strong> contagem de curtidas/orações realizadas, favoritos e compartilhamentos
       (contadores numéricos associados à conta).
     </li>
-    <li>
-      <strong>Chat com IA:</strong> mensagens enviadas ao assistente de inteligência artificial durante a
-      sessão. <strong>As conversas do chat não são persistidas</strong> em nossos servidores — elas existem
-      apenas durante a sessão ativa no dispositivo.
-    </li>
   </ul>
 
   <h3>2.3 Dados Técnicos</h3>
   <p>
-    Não coletamos diretamente dados de dispositivo, localização, câmera, microfone ou qualquer outro sensor.
-    O acesso à internet é necessário para o funcionamento do aplicativo.
+    Não coletamos dados de localização, câmera ou microfone. O acesso à internet é necessário para o
+    funcionamento do aplicativo. No iOS, o aplicativo pode solicitar acesso à biblioteca de fotos
+    exclusivamente para permitir o envio de imagem de fundo personalizada na tela de personalização
+    de mensagens. Nenhuma foto é transmitida a nossos servidores.
   </p>
 
   <h2>3. Como Usamos Seus Dados</h2>
@@ -89,11 +85,12 @@
       <tr><td>Autenticar sua identidade e manter sua sessão ativa</td><td>Execução do contrato (uso do serviço)</td></tr>
       <tr><td>Exibir seu nome e foto nos pedidos de oração que você publicar</td><td>Consentimento (ato de publicar)</td></tr>
       <tr><td>Personalizar sua experiência (perfil, contadores de atividade)</td><td>Interesse legítimo</td></tr>
-      <tr><td>Enviar suas mensagens ao serviço de IA (OpenRouter.ai) para gerar respostas</td><td>Execução do serviço solicitado</td></tr>
+      <tr><td>Exibir anúncios para usuários não assinantes (via Google AdMob)</td><td>Interesse legítimo / consentimento via ATT no iOS</td></tr>
+      <tr><td>Processar assinaturas e pagamentos in-app</td><td>Execução do contrato (uso do serviço premium)</td></tr>
       <tr><td>Melhorar o aplicativo e corrigir problemas técnicos</td><td>Interesse legítimo</td></tr>
     </tbody>
   </table>
-  <p>Não utilizamos seus dados para fins de publicidade ou marketing de terceiros.</p>
+  <p>Não vendemos seus dados para fins de publicidade de terceiros. Anúncios são exibidos diretamente via Google AdMob, conforme descrito na Seção 4.</p>
 
   <h2>4. Compartilhamento de Dados com Terceiros</h2>
   <p>Para operar o aplicativo, compartilhamos dados com os seguintes provedores de serviço:</p>
@@ -112,16 +109,28 @@
   </p>
   <p>Política de privacidade: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
 
-  <h3>4.3 OpenRouter.ai</h3>
+  <h3>4.3 Google AdMob (Google LLC)</h3>
   <p>
-    As mensagens enviadas ao chat de IA são transmitidas à API da OpenRouter, que as encaminha a modelos de
-    linguagem de terceiros (como GPT, Claude, Gemini) para gerar respostas.
-    <strong>Não enviamos dados de identificação pessoal (nome, e-mail, foto) a este serviço</strong> —
-    apenas o conteúdo das mensagens da conversa.
+    Exibimos anúncios para usuários não assinantes por meio do <strong>Google AdMob</strong>. O AdMob pode
+    coletar dados do dispositivo para personalização de anúncios, sujeito ao consentimento do usuário.
+    No iOS, solicitamos permissão via <strong>App Tracking Transparency (ATT)</strong> antes de qualquer
+    coleta para fins publicitários. No Android, seguimos as diretrizes do Google Play.
   </p>
-  <p>Política de privacidade: <a href="https://openrouter.ai/privacy" target="_blank">https://openrouter.ai/privacy</a></p>
+  <p>Política de privacidade: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
 
-  <h3>4.4 Google Fonts (Google LLC)</h3>
+  <h3>4.4 Apple App Store / Google Play (Pagamentos)</h3>
+  <p>
+    As assinaturas e compras dentro do aplicativo são processadas exclusivamente pela
+    <strong>Apple App Store</strong> (iOS) ou pelo <strong>Google Play</strong> (Android).
+    <strong>Não armazenamos dados de cartão de crédito ou informações de pagamento</strong> — essas
+    informações são gerenciadas integralmente pelas respectivas plataformas.
+  </p>
+  <ul>
+    <li>Apple: <a href="https://www.apple.com/legal/privacy/" target="_blank">https://www.apple.com/legal/privacy/</a></li>
+    <li>Google: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+  </ul>
+
+  <h3>4.5 Google Fonts (Google LLC)</h3>
   <p>Utilizado apenas para carregamento de fontes tipográficas. Nenhum dado pessoal é transmitido.</p>
 
   <p>Não vendemos, alugamos ou cedemos seus dados pessoais a terceiros para fins comerciais.</p>
@@ -181,11 +190,19 @@
     <strong>País:</strong> Brasil
   </p>
 
+  <h2>11. Termos de Uso (EULA)</h2>
+  <p>
+    O uso deste aplicativo na <strong>Apple App Store</strong> está sujeito aos
+    <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Termos e Condições Padrão de Licença de Usuário Final da Apple (EULA)</a>.
+    Para usuários do <strong>Google Play</strong>, aplicam-se os
+    <a href="https://play.google.com/intl/pt-BR/about/play-terms/" target="_blank">Termos de Serviço do Google Play</a>.
+  </p>
+
   <hr />
 
   <footer>
     Esta política de privacidade foi elaborada em conformidade com a Lei Geral de Proteção de Dados
-    (LGPD — Lei nº 13.709/2018) e com as políticas do Google Play.
+    (LGPD — Lei nº 13.709/2018) e com as políticas do Google Play e da App Store da Apple.
   </footer>
 
 </body>
